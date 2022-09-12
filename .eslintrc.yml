@@ -6,8 +6,8 @@ env:
 extends: 'eslint:recommended'
 rules:
   indent:
-    - error
-    - 2
+    - off
+    - 0
   linebreak-style:
     - error
     - unix

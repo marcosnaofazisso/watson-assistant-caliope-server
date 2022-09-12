@@ -17,9 +17,9 @@ var assistant = new AssistantV2({
 });
 
 var newContext = {
-  global : {
-    system : {
-      turn_count : 1
+  global: {
+    system: {
+      turn_count: 1
     }
   }
 };
@@ -44,7 +44,7 @@ app.post('/api/message', function (req, res) {
 
   var textIn = '';
 
-  if(req.body.input) {
+  if (req.body.input) {
     textIn = req.body.input.text;
   }
 
@@ -53,10 +53,10 @@ app.post('/api/message', function (req, res) {
     session_id: req.body.session_id,
     context: contextWithAcc,
     input: {
-      message_type : 'text',
-      text : textIn,
-      options : {
-        return_context : true
+      message_type: 'text',
+      text: textIn,
+      options: {
+        return_context: true
       }
     }
   };
@@ -64,7 +64,7 @@ app.post('/api/message', function (req, res) {
   // Send the input to the assistant service
   assistant.message(payload, function (err, data) {
     if (err) {
-      const status = (err.code  !== undefined && err.code > 0)? err.code : 500;
+      const status = (err.code !== undefined && err.code > 0) ? err.code : 500;
       return res.status(status).json(err);
     }
 
