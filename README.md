@@ -20,7 +20,7 @@ Para o futuro da nossa aplicação, pensamos em algumas melhorias: fluxo de paga
 # Demo
 <img src="/demo/caliope-demo.gif" height="800" width="400">
 
-<img src="/demo/caliope-demo-heroku.gif" height="800" width="800">
+<img src="/demo/caliope-demo-heroku.gif" height="800" width="1800">
 
 # Tutorial
 ### npm install
