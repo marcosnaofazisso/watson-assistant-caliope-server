@@ -25,17 +25,8 @@ Para o futuro da nossa aplicação, pensamos em algumas melhorias: fluxo de paga
 # Tutorial
 ### npm install
 
-### npm i @react-native-community/voice
-
-### npm i axios
-### npm i react-native-tts
-
-### npm install navigation
-
-### npm install lint
-
 # como rodar
-npx react-native run-android
+node server.js
 
 
 ## Links do projeto
